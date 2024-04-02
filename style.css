@@ -1,0 +1,66 @@
+@charset "utf-8";
+@font-face {
+    font-family: font1;
+    src: url(font/Vogue.ttf);
+}
+
+body{
+     padding: 30px; 
+     background-color: #6ca6a3;
+   
+text-align: center;
+font-size: 30px;
+font-family: font1;
+}
+
+
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-family: font1;
+}
+
+.toggle-label{
+    width: 60px;
+    height: 30px;
+    background-color: #02e7dc;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-label:before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #eddb66;
+}
+
+.toggle-btn:checked + .toggle-label{
+    background-color: #da2d05;
+}
+
+.toggle-btn:checked + .toggle-label:before{
+ background-color: #329ec8;
+ transform: translate(30px);
+}
+
+.toggle-btn{
+    display: none;
+}
+
+.dark-mode{
+    background-color: #44749d;
+ 
+}
+
+
+
+footer{
+    margin-top: 450px;
+}

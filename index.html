@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Em Dolar</title>
+</head>
+<body>
+   <h1>Real Em Dolar</h1>
+   <input type="checkbox" name="#" id="toggle" class="toggle-btn"> 
+   <label for="toggle" class="toggle-label"></label>
+<label for="real">Real</label>
+<input type="number" name="" id="real">
+<br>
+
+<button onclick="calcularConversao(5.5)">Calcular</button>
+ <p>Resultado: <span id="resultado"></span></p>
+
+ <script>
+
+    function calcularConversao(){
+        const real = document.getElementById('real').value;
+        const imc = real/ (real**0,5);
+
+        document.getElementById('resultado').textContent = imc.toFixed(1);
+    }
+ </script>
+ 
+<footer>Desenvolvido por Mariana</footer>
+
+<script src="btn.js"></script>
+
+</body>
+</html>
